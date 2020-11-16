@@ -24,4 +24,5 @@ clear variables
 
 %sugar testing
 %testing
+%testing3
 
