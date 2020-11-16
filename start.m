@@ -1,28 +1,28 @@
-%% IRIS
-% This start file adds the paths needed to run IRIS
-% Run this file before running any of the models
+% %% IRIS
+% % This start file adds the paths needed to run IRIS
+% % Run this file before running any of the models
 
 
-% Identify path for IRIS
-newdir  = '/MATLAB Drive/IRIS';
+% % Identify path for IRIS
+% newdir  = '/MATLAB Drive/IRIS';
 
-% Change path to reference your IRIS toolbox location 
-irispathstr = [newdir filesep 'IRIS_Tbx_20181028'];
-addpath(irispathstr)
+% % Change path to reference your IRIS toolbox location 
+% irispathstr = [newdir filesep 'IRIS_Tbx_20181028'];
+% addpath(irispathstr)
 
 
-% Start IRIS
-irisstartup
+% % Start IRIS
+% irisstartup
 
-%% MATLAB Report Generator
-% Add path to Report folder
+% %% MATLAB report Generator
+% % Add path to report folder
 
-pathstr = [newdir filesep 'Publish'];
-addpath(pathstr)
+% pathstr = [newdir filesep 'Publish'];
+% addpath(pathstr)
 
-clear variables
+% clear variables
 
-%sugar testing
-%testing
-%testing3
+% %sugar testing
+% %testing
+% %testing3
 

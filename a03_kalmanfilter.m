@@ -72,10 +72,10 @@ d = dbextend(d,h);
 % Database is saved in file 'kalm_his.mat'
 dbsave(d,'results/kalm_his.csv');
 
-%% Report 
+%% report 
 % full version
-disp('Generating Filtration Report...');
-x = Report.new('Filtration report','visible',true);
+disp('Generating Filtration report...');
+x = report.new('Filtration report','visible',true);
 
 %% Figures
 rng = sdate:edate;

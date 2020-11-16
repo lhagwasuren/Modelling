@@ -69,9 +69,9 @@ JUDGEMENT = tseries(qq(2011,1):qq(2013,4),[-1 -0.9 -1.3 -1.6 -2 -2.1 -2.3 -2.7 -
 % Database is saved in file 'history.csv'
 dbsave(d,'results/history.csv');
 
-%% Report - Stylized Facts
-disp('Generating Stylized Facts Report...');
-x = Report.new('Stylized Facts report');
+%% report - Stylized Facts
+disp('Generating Stylized Facts report...');
+x = report.new('Stylized Facts report');
 
 % Figures
 rng = get(d.D4L_CPI,'range');
