@@ -21,3 +21,6 @@ pathstr = [newdir filesep 'Publish'];
 addpath(pathstr)
 
 clear variables
+
+%sugar testing
+
