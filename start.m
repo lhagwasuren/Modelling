@@ -23,4 +23,5 @@ addpath(pathstr)
 clear variables
 
 %sugar testing
+%testing
 
