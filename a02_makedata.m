@@ -25,16 +25,17 @@ d = dbbatch(d,'$1','x12(d.$0,Inf,''mode'',''m'')','namefilter','(.*)_U','fresh',
 
 exceptions = {'RS','RS_RW','D4L_CPI_TAR'};
 
+% (LCY per USD)*{+}PRICE_US/{-}PRICE_LOCAL
 d = dbbatch(d,'L_$0','100*log(d.$0)','namelist',fieldnames(d)-exceptions,'fresh',false);
 
 %% Define the real exchange rate
 d.L_Z = d.L_S + d.L_CPI_RW - d.L_CPI;
 
-%% Growth rate qoq, yoy
+%% Growth rate qoq (@ar), yoy
 d = dbbatch(d,'DLA_$1','4*diff(d.$0)','namefilter','L_(.*)','fresh',false);
 d = dbbatch(d,'D4L_$1','diff(d.$0,-4)','namefilter','L_(.*)','fresh',false);
 
-%% Real variables
+%% Real variables - EX POST
 % Domestic real interest rate
 d.RR = d.RS - d.D4L_CPI;
 
